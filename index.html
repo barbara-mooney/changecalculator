@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Change Calculator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calcheaderzone">
+      <h1>Change Calculator</h1>
+    </div>
+    <div class="calcquestionszone">
+      <h3>Amount Due</h3>
+      <input type = "text" placeholder = "$0.00" id="amount-due" step="0.01" class="input-box"/><br><br>
+      <h3>Amount Given</h3>
+      <input type = "text" placeholder = "$0.00" step=".01" id="amount-received" class="input-box"/>
+    </div>
+    <div class="changeduezone">
+      <button id="calculate-change" class="calcbutton">Calculate change due</button>
+      <p id="total-output" class="output-box"></p>
+    </div>
+    <div class="results-grid-wrapper">
+      <div class="gridzone">
+        <h2>Dollars</h2>
+        <p id="dollars-output">0</p></div>
+      <div class="gridzone">
+        <h2>Quarters</h2>
+        <p id="quarters-output">0</p></div>
+      <div class="gridzone"><h2>Dimes</h2>
+          <p id="dimes-output">0</p></div>
+      <div class="gridzone"><h2>Nickels</h2>
+          <p id="nickels-output">0</p></div>
+      <div class="gridzone"><h2>Pennies</h2>
+          <p id="pennies-output">0</p></div>
+    </div>
+
+      <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+      crossorigin="anonymous"></script>
+  <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
